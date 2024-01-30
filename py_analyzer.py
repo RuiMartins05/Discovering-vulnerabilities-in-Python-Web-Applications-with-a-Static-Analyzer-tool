@@ -91,7 +91,8 @@ def init_analyzer(slice_filename, patterns_filename):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python py_analyser.py <slice_file.py> <patterns_file.json>")
+        #example: python py_analyzer.py slices/1a-basic-flow.py slices/1a-basic-flow.patterns.json
+        print("Usage: python py_analyzer.py slices/<slice_file.py> slices/<patterns_file.json>")
         sys.exit(1)
 
     slice_filename = sys.argv[1]
